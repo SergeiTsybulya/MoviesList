@@ -58,9 +58,9 @@
 		047F027B28BFB36900F6CEAD /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
-				047F029228BFB3AA00F6CEAD /* Controller */,
-				047F029128BFB39C00F6CEAD /* View */,
 				047F029028BFB39200F6CEAD /* Model */,
+				047F029128BFB39C00F6CEAD /* View */,
+				047F029228BFB3AA00F6CEAD /* Controller */,
 				047F027C28BFB36900F6CEAD /* AppDelegate.swift */,
 				047F027E28BFB36900F6CEAD /* SceneDelegate.swift */,
 				047F028528BFB37000F6CEAD /* Assets.xcassets */,

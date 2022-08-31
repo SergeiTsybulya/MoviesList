@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Description {
+struct Description: Equatable {
     let title: String
     let year: Int
 }
