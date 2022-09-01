@@ -31,12 +31,10 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else {
-            DispatchQueue.main.async {
                 self.movies.append(newMovie)
                 self.tableView.beginUpdates()
                 self.tableView.insertRows(at: [IndexPath(row: self.movies.count-1, section: 0)], with: .automatic)
                 self.tableView.endUpdates()
-            }
         }
     }
 }
