@@ -14,6 +14,8 @@
 		047F028628BFB37000F6CEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F028528BFB37000F6CEAD /* Assets.xcassets */; };
 		047F028928BFB37000F6CEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F028728BFB37000F6CEAD /* LaunchScreen.storyboard */; };
 		047F029428BFB3DA00F6CEAD /* DescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F029328BFB3DA00F6CEAD /* DescriptionModel.swift */; };
+		047F029728C09D9C00F6CEAD /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 047F029628C09D9C00F6CEAD /* Collections */; };
+		047F029928C09D9C00F6CEAD /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 047F029828C09D9C00F6CEAD /* OrderedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F029928C09D9C00F6CEAD /* OrderedCollections in Frameworks */,
+				047F029728C09D9C00F6CEAD /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +114,10 @@
 			dependencies = (
 			);
 			name = MovieList;
+			packageProductDependencies = (
+				047F029628C09D9C00F6CEAD /* Collections */,
+				047F029828C09D9C00F6CEAD /* OrderedCollections */,
+			);
 			productName = MovieList;
 			productReference = 047F027928BFB36900F6CEAD /* MovieList.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 047F027028BFB36900F6CEAD;
+			packageReferences = (
+				047F029528C09D9C00F6CEAD /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 047F027A28BFB36900F6CEAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,6 +402,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		047F029528C09D9C00F6CEAD /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		047F029628C09D9C00F6CEAD /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 047F029528C09D9C00F6CEAD /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		047F029828C09D9C00F6CEAD /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 047F029528C09D9C00F6CEAD /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 047F027128BFB36900F6CEAD /* Project object */;
 }

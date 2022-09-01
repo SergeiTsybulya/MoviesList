@@ -8,7 +8,12 @@
 
 import UIKit
 
-struct Description: Equatable {
+//protocol hashDescription {
+//    var title: String { get }
+//    var year: Int { get }
+//}
+
+struct Description: Hashable, Equatable {
     let title: String
     let year: Int
 }
